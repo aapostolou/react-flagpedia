@@ -26,7 +26,7 @@ Result:
 <Flag code="gr" size="112x84" type="jpg" />
 ```
 
-Result: A `waving` `greek` flag that has **width** = `112`, **height** = `84` and is a `jpg`.
+Result: A `waving` `greek` flag that has **width** = `112px`, **height** = `84px` and is a `jpg`.
 
 <img width="112" height="84" alt="Greece" type="jpg" srcset="https://flagcdn.com/224x168/gr.png 2x, https://flagcdn.com/336x252/gr.png 3x" src="https://flagcdn.com/112x84/gr.png">
 
@@ -50,9 +50,9 @@ All the flag codes can be found [here](https://flagcdn.com/en/codes.json)
 
 ##### WavingSize
 
-\*All the sizes that are showing on [flagpedia](https://flagpedia.net/download/api)
-
 `16x12` `20x15` `24x18` `28x21` `32x24` `36x27` `40x30` `48x36` `56x42` `60x45` `64x48` `72x54` `80x60` `84x63` `96x72` `108x81` `112x84` `120x90` `128x96` `144x108` `160x120` `192x144` `224x168` `256x192`
+
+\*All the sizes that are showing on [flagpedia](https://flagpedia.net/download/api)
 
 ##### OriginalWidthSize
 

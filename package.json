@@ -2,7 +2,7 @@
   "name": "react-flagpedia",
   "homepage": "https://github.com/aapostolou/react-flagpedia",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.1",
   "type": "module",
   "files": [
     "dist"
