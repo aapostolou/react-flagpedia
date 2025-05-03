@@ -1,1 +1,1 @@
-export {Counter} from './CounterDemo';
+export * from "./Flag";

@@ -1,8 +1,8 @@
 {
-  "name": "react-library-template",
-  "homepage": "https://morewings.github.io/react-library-template/",
+  "name": "react-flagpedia",
+  "homepage": "https://github.com/aapostolou/react-flagpedia",
   "private": false,
-  "version": "0.1.0",
+  "version": "1.1.0",
   "type": "module",
   "files": [
     "dist"
@@ -19,9 +19,6 @@
   },
   "keywords": [
     "react",
-    "template",
-    "react-testing-library",
-    "testing-library",
     "eslint",
     "npm",
     "rollup",
@@ -32,7 +29,6 @@
     "css-modules",
     "typescript"
   ],
-  "description": "Missing React, typescript NPM library creation template",
   "scripts": {
     "dev": "vite",
     "clean:lib": "rm -rf dist",

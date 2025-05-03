@@ -24,7 +24,8 @@ type SvgFlagProps = {
 
 export type FlagProps = {
     code: FlagCode;
-} & (WavingFlagProps | OriginalWidthFlagProps | OriginalHeightFlagProps) &
+    size?: undefined;
+} & (WavingFlagProps | OriginalWidthFlagProps | OriginalHeightFlagProps | SvgFlagProps) &
     ImgHTMLAttributes<HTMLImageElement>;
 
 const WavingFlag: React.FC<Omit<FlagProps, "variant" | "size"> & Pick<WavingFlagProps, "size">> = ({
@@ -47,12 +48,9 @@ const WavingFlag: React.FC<Omit<FlagProps, "variant" | "size"> & Pick<WavingFlag
     );
 };
 
-const OriginalWidthFlag: React.FC<Omit<FlagProps, "variant" | "size"> & Pick<OriginalWidthFlagProps, "size">> = ({
-    code,
-    size = "w40",
-    type = "png",
-    ...imgProps
-}) => {
+const OriginalWidthFlag: React.FC<
+    Omit<FlagProps, "variant" | "size"> & Pick<OriginalWidthFlagProps, "size" | "type">
+> = ({ code, size = "w40", type = "png", ...imgProps }) => {
     const width = Number(size.slice(1));
 
     return (
@@ -65,12 +63,9 @@ const OriginalWidthFlag: React.FC<Omit<FlagProps, "variant" | "size"> & Pick<Ori
     );
 };
 
-const OriginalHeightFlag: React.FC<Omit<FlagProps, "variant" | "size"> & Pick<OriginalHeightFlagProps, "size">> = ({
-    code,
-    size = "h40",
-    type = "png",
-    ...imgProps
-}) => {
+const OriginalHeightFlag: React.FC<
+    Omit<FlagProps, "variant" | "size"> & Pick<OriginalHeightFlagProps, "size" | "type">
+> = ({ code, size = "h40", type = "png", ...imgProps }) => {
     const height = Number(size.slice(1));
 
     return (
